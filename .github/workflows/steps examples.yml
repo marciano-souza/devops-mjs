@@ -2,14 +2,14 @@ job mail:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-  	uses: cybervoid//action-send-email-nodemailer@v1
- 	env:
-    	  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    	  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  	with:
-    	  to: recipient@example.com,other-recipient@example.com
+        uses: cybervoid//action-send-email-nodemailer@v1
+        env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        with:
+          to: recipient@example.com,other-recipient@example.com
     	  from: '"Marciano Souza <marcianojsouza@gmail.com>"'
     	  subject: 'This is my subject'
     	  body: Sample email from ${{github.repository}}. Conseguiu!
       - name: Was the email sent
-  	run: echo "Was the email sent? ${{ steps.message.outputs.message }}"
+        run: echo "Was the email sent? ${{ steps.message.outputs.message }}"
