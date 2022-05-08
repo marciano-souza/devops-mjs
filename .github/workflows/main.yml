@@ -1,0 +1,8 @@
+name: devops-pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build
