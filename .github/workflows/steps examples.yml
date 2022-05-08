@@ -7,7 +7,7 @@ job mail:
             AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
             AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
-          to: recipient@example.com,other-recipient@example.com
+          to: marcianojsouza@gmail.com,marciano.souza@gmail.com
     	  from: '"Marciano Souza <marcianojsouza@gmail.com>"'
     	  subject: 'This is my subject'
     	  body: Sample email from ${{github.repository}}. Conseguiu!
