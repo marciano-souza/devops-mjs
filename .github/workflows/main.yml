@@ -5,4 +5,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build
+  build:
+    runs-on: ubuntu-latest
+    steps:            
+      - name: executa comando
+        run: echo "Configuração inicial do pipeline"
